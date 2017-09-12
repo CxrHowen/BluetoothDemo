@@ -6,13 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.chen.bluetoothdemo.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/start_blue_tooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:onClick="start_blue_tooth"
+        android:text="开启蓝牙"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/close_blue_tooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="close_blue_tooth"
+        android:text="关闭蓝牙"
+        app:layout_constraintStart_toStartOf="@id/start_blue_tooth"
+        app:layout_constraintTop_toBottomOf="@id/start_blue_tooth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="scan_blue_tooth"
+        android:text="搜索蓝牙" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="connect_blue_tooth"
+        android:text="连接蓝牙"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
